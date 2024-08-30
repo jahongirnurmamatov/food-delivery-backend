@@ -14,7 +14,9 @@ const port =4000;
 connectDB();
 //middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ['https://food-delivery-front-delta.vercel.app/', 'https://food-deliver-admin.vercel.app/']
+  }));
 
 
 //api endpoint
