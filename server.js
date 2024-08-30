@@ -15,7 +15,7 @@ connectDB();
 //middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['https://food-delivery-front-delta.vercel.app/', 'https://food-deliver-admin.vercel.app/']
+    origin: ['https://food-delivery-front-delta.vercel.app', 'https://food-deliver-admin.vercel.app']
   }));
 
 
